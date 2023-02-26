@@ -1,0 +1,35 @@
+div.img{
+    box-sizing: border-box;
+}
+
+.logo-container{
+    height: 600px;
+    background: linear-gradient(rgb(66, 168, 252),blue);
+
+    position: relative;
+}
+
+.logo-contents{
+    width: 30%;
+    height: 50%;
+    padding: 30px;
+
+    text-align: left;
+    color: aliceblue;
+
+    float: left;
+}
+.logo-img{
+    float: right;
+    
+    height: 80%;
+
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+
