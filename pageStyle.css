@@ -1,35 +1,217 @@
-div.img{
+div, i {
     box-sizing: border-box;
 }
 
-.logo-container{
-    height: 600px;
-    background: linear-gradient(rgb(66, 168, 252),blue);
+body {
+    margin: 0;
+    width: 100%;
 
-    position: relative;
 }
 
-.logo-contents{
-    width: 30%;
-    height: 50%;
-    padding: 30px;
+.btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-black {
+    background: #444;
+    color: azure;
+}
+
+.main-bg {
+
+    height: 550px;
+    background: linear-gradient(rgb(66, 168, 252), blue);
+    color: white;
+
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.main-contents {
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+}
+
+.main-iphone {
+    width: 400px;
+    float: right;
+
+    margin-top: 95px;
+}
+
+
+.service {
+    background: rgb(57, 57, 241);
+    color: white;
+
+    text-align: center;
+    padding: 60px 30px 50px 30px;
+
+}
+
+.service-container {
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+}
+
+.service-items {
+    width: 100%;
+
+}
+
+.service-items div {
+
+    margin: 20px;
+    text-align: center;
+}
+
+.service-items div>i {
+    background-color: aliceblue;
+
+    font-size: 40px;
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+    color: rgb(57, 57, 241);
+    ;
+}
+
+.portfolio{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.portfolio-container{
     text-align: left;
-    color: aliceblue;
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*  portfolio  */
+.portfolio-item {
+    position: relative;
 
     float: left;
-}
-.logo-img{
-    float: right;
-    
-    height: 80%;
+    width: 50%;
+    height: 450px;
+    background-size: cover;
 
-    position: absolute;
-    bottom: 0%;
-    right: 5%;
+    padding: 200px 40px 30px 40px;
+
 }
-.logo-img img{
+
+.white-box{
+    position: absolute;
+
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+
+    z-index: 2;
+    transition: all 1s;
 }
 
+.white-box:hover{
+    border: 30px solid white;
+}
+
+
+.item1{
+    background-image: url(portfolio-1.jpg);
+}
+.item2{
+    background-image: url(portfolio-2.jpg);
+}
+.item3{
+    background-image: url(portfolio-3.jpg);
+}
+.item4{
+    background-image: url(portfolio-4.jpg);
+}
+
+.footer{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.footer-contatiner{
+    display: flex;
+    justify-content: center;
+}
+.footer-contatiner div{
+    width: 33.33%;
+}
+.footer-contatiner div>i{
+    background-color: rgb(88, 88, 250);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    
+    line-height: 80px;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .main-contents {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .main-contents button {
+        background-color: black;
+        color: white;
+    }
+
+    .main-iphone {
+        float: none;
+        width: 260px;
+        display: block;
+        margin: auto;
+    }
+
+    .main-bg {
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .service-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-items {
+        width: 100%;
+
+    }
+
+    .portfolio-item{
+        float: none;
+        width: 100%;
+    }
+
+
+}
